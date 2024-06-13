@@ -1,0 +1,41 @@
+@media (min-width: 600px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .header__navbar {
+        display: none;
+        
+    }
+
+    .header__bars-btn{
+        
+        display: block;
+
+    }.header__bars-btn svg{
+        width: 40px !important;
+        height: 40px !important;
+        
+    }
+    .header__container-mobile{
+        width: 40%;
+    }
+
+    .hero__content-desc {
+        padding: 0 32px;
+    }
+    .body__infor_title{
+        max-width: 50%;
+        font-size: 25px;
+
+
+    }
+    .footer__copyright{
+        display: flex;
+        flex-direction: column;
+    }
+}

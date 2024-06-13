@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../20_5_2024_task1"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Test"
+	}
+}

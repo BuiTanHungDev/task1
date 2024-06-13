@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web - THE CURSEBORN SAGA </title>
+
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/responsive-mobile.css">
+        <link rel="stylesheet" href="./assets/css/responsive-tablet.css">
+
+        <!-- bootstrap 5 -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+            crossorigin="anonymous">
+        <!-- font-awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- bootstrap -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+            integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- JQuery -->
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- slick carousel-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+            integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+            integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- light box -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+            integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <section class="header">
+                <div class="container">
+                    <div class="header__container">
+                        <h1 class="header__brand">THE CURSEBORN SAGA</h1>
+                        <nav class="header__navbar">
+                            <ul class="header__navbar-list">
+                                <li class="header__navbar-item active">
+                                    <a class="header__navbar-item-link"
+                                        href="javascript:void(0)"
+                                        onclick="scrollToHome()">HOME</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a class="header__navbar-item-link"
+                                        href="javascript:void(0)"
+                                        onclick="scrollToInfo()">INFO</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a class="header__navbar-item-link"
+                                        href="javascript:void(0)"
+                                        onclick="scrollToContactus()">CONTACT
+                                        US</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a class="header__navbar-item-link"
+                                        href="javascript:void(0)"
+                                        onclick="scrollToOurworld()">SEE OUR
+                                        WORLD</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a class="header__navbar-item-link"
+                                        href="javascript:void(0)"
+                                        onclick="scrollToBazaar()">BAZAAR</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a class="header__navbar-item-link"
+                                        href="javascript:void(0)"
+                                        onclick="scrollToCrew()">THE
+                                        CREW</a>
+                                </li>
+                            </ul>
+
+                            <!-- mobile -->
+
+                        </nav>
+                        <label for="nav-mobile-input" class="header__bars-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 11H22V13H2V11ZM2 5H22V7H2V5ZM2 17H22V19H2V17Z"
+                                    fill="black" />
+                            </svg>
+                        </label>
+
+                        <input type="checkbox" hidden name class="nav-input"
+                            id="nav-mobile-input">
+                        <label for="nav-mobile-input" class="nav__overlay"
+                            id="nav__overlay"></label>
+                        <!-- navbar mobile -->
+                        <div class="header__container-mobile"
+                            id="header__container-mobile">
+                            <h1 class="header__mobile-brand">THE CURSEBORN
+                                SAGA</h1>
+                            <nav class="header__navbar-mobile">
+                                <ul class="header__navbar-mobile-list">
+                                    <li
+                                        class="header__navbar-mobile-item active">
+                                        <a
+                                            class="header__navbar-mobile-item-link"
+                                            href="#HOME">HOME</a>
+                                    </li>
+                                    <li class="header__navbar-mobile-item">
+                                        <a
+                                            class="header__navbar-mobile-item-link"
+                                            href="javascript:void(0)"
+                                            onclick="scrollToInfo()">INFO</a>
+                                    </li>
+                                    <li class="header__navbar-mobile-item">
+                                        <a
+                                            class="header__navbar-mobile-item-link"
+                                            href="javascript:void(0)"
+                                            onclick="scrollToContactus()">CONTACT
+                                            US</a>
+                                    </li>
+                                    <li class="header__navbar-mobile-item">
+                                        <a
+                                            class="header__navbar-mobile-item-link"
+                                            href="javascript:void(0)"
+                                            onclick="scrollToOurworld()">SEE OUR
+                                            WORLD</a>
+                                    </li>
+                                    <li class="header__navbar-mobile-item">
+                                        <a
+                                            class="header__navbar-mobile-item-link"
+                                            href="javascript:void(0)"
+                                            onclick="scrollToBazaar()">BAZAAR</a>
+                                    </li>
+                                    <li class="header__navbar-mobile-item">
+                                        <a
+                                            class="header__navbar-mobile-item-link"
+                                            href="javascript:void(0)"
+                                            onclick="scrollToCrew()">THE
+                                            CREW</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <label for="nav-mobile-input"
+                                class="header__mobile-close">
+                                <svg width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_39_1036)">
+                                        <path
+                                            d="M9.46582 8.01316L15.696 1.78287C16.1014 1.37761 16.1014 0.722342 15.696 0.31713C15.2907 -0.0881317 14.6355 -0.0881317 14.2303 0.31713L7.99993 6.54737L1.76984 0.31713C1.36438 -0.0881317 0.709353 -0.0881317 0.304092 0.31713C-0.101364 0.722391 -0.101364 1.37761 0.304092 1.78287L6.53413 8.01316L0.30414 14.2434C-0.101315 14.6487 -0.101315 15.3039 0.30414 15.7091C0.40027 15.8055 0.514502 15.882 0.640272 15.9341C0.766042 15.9862 0.900871 16.013 1.03701 16.0128C1.30233 16.0128 1.56774 15.9113 1.76988 15.7091L7.99993 9.4789L14.2303 15.7091C14.3264 15.8055 14.4406 15.882 14.5664 15.9341C14.6922 15.9862 14.827 16.013 14.9631 16.0128C15.2284 16.0128 15.4939 15.9113 15.696 15.7091C16.1014 15.3039 16.1014 14.6487 15.696 14.2434L9.46582 8.01316Z"
+                                            fill="#222222" />
+                                    </g>
+                                    <defs>
+                                        <clippath id="clip0_39_1036">
+                                            <rect width="16" height="16"
+                                                fill="white" />
+                                        </clippath>
+                                    </defs>
+                                </svg>
+                            </label>
+                        </div>
+
+                        <!-- Mobile -->
+                    </div>
+                </div>
+            </section>
+
+            <main class="main__page " id="main_page">
+                <section class="hero" data-speed="20">
+                    <div class="container">
+                        <div class="hero__content">
+                            <div class="hero__content-title">
+                                <h1>NIGHT AND DAY</h1>
+                            </div>
+                            <div class="hero__content-desc">
+                                <p>
+                                    After the moment known as EIEN unfolded,
+                                    and
+                                    the
+                                    birth of Universe came to be, a Goddess
+                                    awakened
+                                    upon a floating rock in a world filled
+                                    with
+                                    beauty and endless possibility. Upon
+                                    awakening,
+                                    she learned her name, and from that
+                                    moment
+                                    on,
+                                    all that lived in the universe knew Life
+                                    as
+                                    Lady
+                                    Vale. Yet, she ...
+                                </p>
+                            </div>
+                            <div class="hero__bg-item"
+                                onclick="scrollToInfo()">
+                                <img srcset="./assets/img/scrolldown.png 2x"
+                                    alt="s">
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="infor" id="body_infor">
+                    <div class="body__infor">
+                        <div class="container">
+                            <div class="body__infor-content">
+                                <div class="body__infor-detail">
+                                    <div class="body__infor_title">
+                                        What is <strong>the
+                                            Curseborn Saga?</strong>
+
+                                    </div>
+                                    <div class="body__infor_des">
+                                        <p>The Curseborn Saga is a high fantasy
+                                            epic, set in
+                                            the
+                                            distant fictional realm known as
+                                            Soria.
+                                            It tells
+                                            the
+                                            tale of Death’s unrelenting pursuit
+                                            of
+                                            Lady
+                                            Life,
+                                            and the never-ending war known as
+                                            Ragnarok. The
+                                            Curseborn Saga is a 22 Chapter
+                                            Series
+                                            that will
+                                            be
+                                            released one by one in the form of
+                                            short
+                                            novellas.
+                                            Each novella will have it’s own
+                                            unique
+                                            cover
+                                            drawn
+                                            by the legend and master of artwork,
+                                            Ji
+                                            Se.</p>
+                                    </div>
+                                    <div class="body__info-read-more">
+                                        <a href="#">
+                                            <i class="fa fa-briefcase"></i>
+                                            <p>READ MORE</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="body__info_img">
+                                    <img src="./assets/img/info.png"
+                                        alt="image_info">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <section class="character " id="character">
+                    <div class="container">
+                        <div class="body__character">
+                            <div class="body__character-content">
+                                <div class="body__character-title">
+                                    <h2 class="body__character-title-heading">
+                                        THE CHARACTERS
+                                    </h2>
+
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                </div>
+
+                                <div
+                                    class="body__character-body-row slide-character">
+
+                                    <div class="body__character-card">
+
+                                        <img src="./assets/img/carousel_1.png"
+                                            alt>
+                                        <div
+                                            class="body__character-card-body">
+                                            <h5
+                                                class="body__character-card-title">STORM</h5>
+                                            <p
+                                                class="body__character-card-text">Lorem
+                                                ipsum dolor sit amet
+                                                consectetur.
+                                                Netus
+                                                sem turpis faucibus tortor
+                                                purus.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="body__character-card">
+                                        <div
+                                            class="body__character-card-img">
+                                            <img
+                                                src="./assets/img/carousel_2.png"
+                                                alt>
+                                        </div>
+
+                                        <div
+                                            class="body__character-card-body">
+                                            <h5
+                                                class="body__character-card-title">STORM</h5>
+                                            <p
+                                                class="body__character-card-text">Lorem
+                                                ipsum dolor sit amet
+                                                consectetur.
+                                                Netus
+                                                sem turpis faucibus tortor
+                                                purus.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="body__character-card">
+                                        <div
+                                            class="body__character-card-img">
+                                            <img
+                                                src="./assets/img/carousel_3.png"
+                                                alt>
+                                        </div>
+
+                                        <div
+                                            class="body__character-card-body">
+                                            <h5
+                                                class="body__character-card-title">STORM</h5>
+                                            <p
+                                                class="body__character-card-text">Lorem
+                                                ipsum dolor sit amet
+                                                consectetur.
+                                                Netus
+                                                sem turpis faucibus tortor
+                                                purus.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="body__character-card">
+                                        <div
+                                            class="body__character-card-img">
+                                            <img
+                                                src="./assets/img/carousel_4.png"
+                                                alt>
+                                        </div>
+
+                                        <div
+                                            class="body__character-card-body">
+                                            <h5
+                                                class="body__character-card-title">STORM</h5>
+                                            <p
+                                                class="body__character-card-text">Lorem
+                                                ipsum dolor sit amet
+                                                consectetur.
+                                                Netus
+                                                sem turpis faucibus tortor
+                                                purus.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="body__character-card">
+
+                                        <img src="./assets/img/carousel_1.png"
+                                            alt>
+                                        <div
+                                            class="body__character-card-body">
+                                            <h5
+                                                class="body__character-card-title">STORM</h5>
+                                            <p
+                                                class="body__character-card-text">Lorem
+                                                ipsum dolor sit amet
+                                                consectetur.
+                                                Netus
+                                                sem turpis faucibus tortor
+                                                purus.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="body__character-card">
+                                        <div
+                                            class="body__character-card-img">
+                                            <img
+                                                src="./assets/img/carousel_2.png"
+                                                alt>
+                                        </div>
+
+                                        <div
+                                            class="body__character-card-body">
+                                            <h5
+                                                class="body__character-card-title">STORM</h5>
+                                            <p
+                                                class="body__character-card-text">Lorem
+                                                ipsum dolor sit amet
+                                                consectetur.
+                                                Netus
+                                                sem turpis faucibus tortor
+                                                purus.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="body__character-card">
+                                        <div
+                                            class="body__character-card-img">
+                                            <img
+                                                src="./assets/img/carousel_3.png"
+                                                alt>
+                                        </div>
+
+                                        <div
+                                            class="body__character-card-body">
+                                            <h5
+                                                class="body__character-card-title">STORM</h5>
+                                            <p
+                                                class="body__character-card-text">Lorem
+                                                ipsum dolor sit amet
+                                                consectetur.
+                                                Netus
+                                                sem turpis faucibus tortor
+                                                purus.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="body__character-card">
+                                        <div
+                                            class="body__character-card-img">
+                                            <img
+                                                src="./assets/img/carousel_4.png"
+                                                alt>
+                                        </div>
+
+                                        <div
+                                            class="body__character-card-body">
+                                            <h5
+                                                class="body__character-card-title">STORM</h5>
+                                            <p
+                                                class="body__character-card-text">Lorem
+                                                ipsum dolor sit amet
+                                                consectetur.
+                                                Netus
+                                                sem turpis faucibus tortor
+                                                purus.</p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="crew" id="crew">
+                    <div class="container">
+                        <div class="body__crew">
+                            <div class="body__crew-title">
+                                <h2 class="body__crew-title-heading">THE
+                                    CREW</h2>
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+
+                            </div>
+                            <div class="body__crew-content">
+                                <div class="body__crew-des">
+                                    <p class="body__crew-des-text1">We are the
+                                        Four
+                                        Lords.
+                                        Two
+                                        brothers and two best mates who have
+                                        learned
+                                        that
+                                        our
+                                        minds will always and forever work at
+                                        their
+                                        best
+                                        when
+                                        you work with others. We are story
+                                        tellers
+                                        in
+                                        trade,
+                                        and
+                                        we long to create something that has
+                                        never
+                                        been
+                                        before.
+                                        Something that will touch people’s
+                                        hearts
+                                        and
+                                        leave
+                                        them
+                                        breathless. We are just like you. We
+                                        work
+                                        normal
+                                        jobs
+                                        everyday, and try desperately to find
+                                        our
+                                        way in
+                                        this
+                                        labyrinth we have all come to know as
+                                        life.
+                                        But
+                                        for
+                                        us,
+                                        even in the toughest of times, and we
+                                        all
+                                        have
+                                        them,
+                                        it
+                                        was always stories that kept us going.
+                                        It is
+                                        our
+                                        passion. It is how we can live life, yet
+                                        still
+                                        create.
+                                        We believe that stories are the heart of
+                                        everything.</p>
+                                    <p class="body__crew-des-text2">That’s
+                                        exactly
+                                        why
+                                        four
+                                        years ago, we came together from the
+                                        corners
+                                        of
+                                        this
+                                        world and began working on our own
+                                        story.
+                                        “One
+                                        of
+                                        the
+                                        greatest stories ever told.” This is
+                                        what we
+                                        told
+                                        ourselves we would create. We devote our
+                                        lives
+                                        to
+                                        this.
+                                        To give something back to the world
+                                        after
+                                        the
+                                        artists of
+                                        the past have already given so much. We
+                                        would
+                                        not be
+                                        who
+                                        we are without them. And in turn, are
+                                        willing to
+                                        stake
+                                        our futures on creating something for
+                                        others. We
+                                        are
+                                        artists. We may be irrational, reckless,
+                                        and
+                                        stupid
+                                        at
+                                        times . . . But we know how to love.</p>
+                                    <div class="body__crew-author">
+                                        <p>Director – Marten D. Shanks {} Writer
+                                            –
+                                            Trowa
+                                            D.
+                                            Cloud</p>
+                                        <p>Creator – Simon Gatsu Sandoval {}
+                                            Creator
+                                            –
+                                            Peter
+                                            Ace
+                                            Kolias</p>
+                                    </div>
+                                </div>
+
+                                <div class="body__crew-read-more">
+                                    <a href="#">
+                                        <i class="fa fa-briefcase"></i>
+                                        <p>READ MORE</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="novellas" id="novellas">
+                    <div class="container">
+                        <div class="body__novellas">
+                            <div class="body__novellas-content">
+                                <div class="body__novellas-title">
+                                    <h2 class="body__novellas-title-heading">
+                                        THE NOVELLAS
+                                    </h2>
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                </div>
+
+                                <div
+                                    class="body__novellas-list-row slide-novellas">
+                                    <div class="body__novellas-item">
+
+                                        <p class="body__novellas-item-text">
+                                            ARC
+                                            I: THE
+                                            SOLDIER
+                                            GAMES</p>
+                                    </div>
+                                    <div class="body__novellas-item">
+
+                                        <p
+                                            class="body__novellas-item-text">ARC
+                                            II:
+                                            DIVING
+                                            DEEP,
+                                            THE
+                                            100 RING FESTIVAL </p>
+                                    </div>
+                                    <div class="body__novellas-item">
+
+                                        <p
+                                            class="body__novellas-item-text">ARC
+                                            III: LAW
+                                            OF
+                                            BLOOD</p>
+
+                                    </div>
+                                    <div
+                                        class="body__novellas-item">
+                                        <p
+                                            class="body__novellas-item-text">ARC
+                                            IV: THE
+                                            DRAGON
+                                            KING</p>
+
+                                    </div>
+                                    <div class="body__novellas-item">
+
+                                        <p class="body__novellas-item-text">
+                                            ARC
+                                            I: THE
+                                            SOLDIER
+                                            GAMES</p>
+                                    </div>
+                                    <div class="body__novellas-item">
+
+                                        <p
+                                            class="body__novellas-item-text">ARC
+                                            II:
+                                            DIVING
+                                            DEEP,
+                                            THE
+                                            100 RING FESTIVAL </p>
+                                    </div>
+                                   
+                                    
+                                  
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <section class="ourworld" id="ourworld">
+                    <div class="container">
+                        <div class="body__ourworld">
+                            <div class="body__ourworld-content">
+                                <div class="body__ourworld-title">
+                                    <div class="body__ourworld-title-heading">
+                                        <p>SEE </p> <span> OUR WORLD</span>
+
+                                    </div>
+
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                </div>
+
+                                <div class="body__ourworld-des">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing
+                                        elit,
+                                        sed do eiusmod tempor incididunt ut
+                                        labore et
+                                        dolore
+                                        magna aliqua. Ut enim ad minim veniam,
+                                        quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut
+                                        aliquip ex
+                                        ea
+                                        commodo consequat. Duis aute irure dolor
+                                        in
+                                        reprehenderit in voluptate velit esse
+                                        cillum
+                                        dolore
+                                        eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat
+                                        cupidatat
+                                        non proident, sunt in culpa qui officia
+                                        deserunt
+                                        mollit
+                                        anim id est laborum
+                                    </p>
+                                </div>
+
+                                <div class="body__ourworld-body">
+                                    <div class="body__ourworld-filter">
+                                        FILTER BY TYPE
+
+                                    </div>
+                                    <div class="body__ourworld-character">
+                                        <ul
+                                            class="body__ourworld-character-list">
+                                            <li
+                                                class="body__ourworld-character-list-item"
+                                                data-filter="character">The
+                                                Character</li> |
+                                            <li
+                                                class="body__ourworld-character-list-item"
+                                                data-filter="ConceptualArtwork">Conceptual
+                                                Artwork</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="body__ourworld-image">
+                                    <div class="body__ourworld-image-item"
+                                        data-category="ConceptualArtwork">
+                                        <a href="./assets/img/see1.png"
+                                            data-lightbox="ConceptualArtwork"
+                                            data-title="Conceptual Artwork">
+                                            <img src="./assets/img/see1.png"
+                                                alt>
+                                        </a>
+                                    </div>
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="character">
+                                        <a href="./assets/img/see2.png"
+                                            data-lightbox="character"
+                                            data-title="Character">
+                                            <img src="./assets/img/see2.png"
+                                                alt>
+                                        </a>
+                                    </div>
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="ConceptualArtwork">
+                                        <a href="./assets/img/see3.png"
+                                            data-lightbox="ConceptualArtwork"
+                                            data-title="Conceptual Artwork">
+                                            <img src="./assets/img/see3.png"
+                                                alt>
+                                        </a>
+                                    </div>
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="ConceptualArtwork">
+                                        <a href="./assets/img/see4.png"
+                                            data-lightbox="ConceptualArtwork"
+                                            data-title="Conceptual Artwork">
+                                            <img src="./assets/img/see4.png"
+                                                alt>
+                                        </a>
+                                    </div>
+
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="character">
+                                        <a href="./assets/img/see5.png"
+                                            data-lightbox="character"
+                                            data-title="Character">
+                                            <img src="./assets/img/see5.png"
+                                                alt>
+                                        </a>
+                                    </div>
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="character">
+                                        <a href="./assets/img/see6.png"
+                                            data-lightbox="character"
+                                            data-title="Character">
+                                            <img src="./assets/img/see6.png"
+                                                alt>
+                                        </a>
+                                    </div>
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="character">
+                                        <a href="./assets/img/see7.png"
+                                            data-lightbox="character"
+                                            data-title="Character">
+                                            <img src="./assets/img/see7.png"
+                                                alt>
+                                        </a>
+                                    </div>
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="character">
+                                        <a href="./assets/img/see8.png"
+                                            data-lightbox="character"
+                                            data-title="Character">
+                                            <img src="./assets/img/see8.png"
+                                                alt>
+                                        </a>
+                                    </div>
+
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="character">
+                                        <a href="./assets/img/see9.png"
+                                            data-lightbox="character"
+                                            data-title="Character">
+                                            <img src="./assets/img/see9.png"
+                                                alt>
+                                        </a>
+                                    </div>
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="character">
+                                        <a href="./assets/img/see10.png"
+                                            data-lightbox="character"
+                                            data-title="Character">
+                                            <img src="./assets/img/see10.png"
+                                                alt>
+                                        </a>
+                                    </div>
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="ConceptualArtwork">
+                                        <a href="./assets/img/see11.png"
+                                            data-lightbox="ConceptualArtwork"
+                                            data-title="Conceptual Artwork">
+                                            <img src="./assets/img/see11.png"
+                                                alt>
+                                        </a>
+                                    </div>
+                                    <div class=" body__ourworld-image-item"
+                                        data-category="ConceptualArtwork">
+                                        <a href="./assets/img/see12.png"
+                                            data-lightbox="ConceptualArtwork"
+                                            data-title="Conceptual Artwork">
+                                            <img src="./assets/img/see12.png"
+                                                alt>
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="bazaar" id="bazaar">
+                    <div class="container">
+                        <div class="bazaar__container">
+                            <div class="bazaar__content">
+                                <div class="bazaar__title">
+                                    <h2>BAZAAR</h2>
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                </div>
+
+                                <div class="bazaar__content-desc1">Lorem
+                                    ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim
+                                    id est laborum</div>
+                                <div class="bazaar__content-desc2">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis
+                                    nostrud exercitation ullamco laboris
+                                    nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit
+                                    in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim
+                                    id est laborum
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contactus" id="contactus">
+                    <div class="container">
+                        <div class="contactus__container">
+                            <div class="contactus__title">
+                                <h2>FEEL FREE TO CONTACT US</h2>
+                                <span class="line line1"></span>
+                                <span class="line line2"></span>
+                            </div>
+                            <div class="contactus__desc">
+                                <p>Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. </p>
+                            </div>
+                            <div class="contactus__form-contact">
+                                <form class action="#" method="post">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="name">Name
+                                                <sup>*</sup></label>
+                                            <input type="text" name="name"
+                                                id="name">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="email">Email address
+                                                <sup>*</sup></label>
+                                            <input type="text" name="email"
+                                                id="email">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="message">
+                                                Message <sup>*</sup>
+                                            </label>
+                                            <textarea name="message"
+                                                id="message"></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="button"
+                                            class="button-send">Send</button>
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__content">
+                            <div class="footer__copyright">
+                                <p>ALL RIGHTS RESERVED. COPYRIGHT © 2015
+                                     <strong>THE CURSEBORN SAGA</strong>
+                                </p>
+                               
+
+                            </div>
+                            <div class="footer__social">
+                                <img srcset="./assets/img/icon_fb.png 2x" alt>
+                                <img srcset="./assets/img/twitter.png 2x" alt>
+                                <img srcset="./assets/img/google.png 2x" alt>
+                                <img srcset="./assets/img/linkedin.png 2x" alt>
+                                <img srcset="./assets/img/dribbble.png 2x" alt>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </footer>
+            </main>
+
+        </div>
+
+        <script type="text/javascript"
+            src="./assets/js/sticky_menu.js"></script>
+        <script type="text/javascript" src="./assets/js/parallax.js"></script>
+        <script type="text/javascript" src="./assets/js/novellass.js"></script>
+        <script type="text/javascript" src="./assets/js/load_more.js"></script>
+        <script type="text/javascript" src="./assets/js/character.js"></script>
+        <script type="text/javascript"
+            src="./assets/js/lightbox_filter.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <!-- Isotope -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+            integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+        <!-- Slick -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+            integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>

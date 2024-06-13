@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #00A8FF;
+    --text-color: #FFFFFF;
+
+
+}
+
+
+a {
+    text-decoration: none !important;
+
+}
+
+li {
+    list-style: none;
+}
+
+sup {
+    color: red;
+}
+
+body{
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
